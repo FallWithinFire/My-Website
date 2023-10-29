@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap">
+  <style>
+    body {
+      display: flex;
+      font-family: 'Poppins', sans-serif;
+      flex-direction: column;
+      background-color: black;
+      justify-content: center;
+      align-items: center; /* Center content horizontally and vertically */
+      height: 100vh;
+      margin: 0;
+    }
+
+    .columns {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      margin-top: 20px;
+    }
+
+    .column {
+      flex: 1;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    h1 {
+      text-align: center;
+      color: aliceblue;
+      margin-top: 20px;
+    }
+
+    h2 {
+      text-align: center;
+      margin-top: 20px;
+      color: aliceblue;
+    }
+
+    img {
+      display: block;
+      margin: 0 auto;
+      max-width: 40%;
+      max-height: 80vh;
+    }
+
+    p {
+      text-align: center;
+      color: aliceblue;
+      max-width: 80%;
+      margin: 0 auto;
+    }
+
+    a {
+      text-align: center;
+      display: block;
+      color: aliceblue;
+    }
+
+    .calculator {
+      padding-top: 28px; 
+    }
+
+  </style>
+</head>
+<body>
+  <h1>My Projects</h1>
+  <div class="columns">
+  <div class="column">
+    <img src="/img/projectquiz.png" alt="Centered Image">
+    <h2>Quiz</h2>
+    <p>This quiz contains 10 questions, a dark/light mode toggle, feedback on correct or incorrect questions and results of how many you got correct!</p>
+    <a href="#">Link To GitHub Repo</a>
+    <a href="quiz/index.html">Link To Quiz</a>
+  </div>
+  <div class="column calculator">
+    <img src="/img/calc.png" alt="Centered Image">
+    <h2>Calculator</h2>
+    <p>This is a fully functional calculator using HTML, CSS and JS.</p>
+    <a href="#">Link To GitHub Repo</a>
+    <a href="calc/index.html">Link To Calculator</a>
+  </div>
+  </div>
+</body>
+</html>
