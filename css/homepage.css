@@ -73,6 +73,7 @@
         bottom: 0;
         width: 100%;
         left: 0;
+        z-index:2;
       }
 
       .container {
@@ -333,4 +334,102 @@
       .fur-babies-box h2 {
         font-size: 18px;
         margin-bottom: 8px;
+      }
+
+
+
+        #slider {
+        position: relative;
+        width: 500px;
+        height: 400px;
+        margin-left: auto;
+        margin-right: auto;
+        z-index:1;
+      }
+
+
+      #slider img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+        transition: all 1s ease-in-out;
+      }
+
+
+      
+      #slider img.active {
+        opacity: 1;
+      }
+
+
+      #slider button {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        border: 3px solid #fff;
+        border-radius: 50%;
+        width: 70px;
+        height: 70px;
+        background-color: #717171;
+        color: #f1f1f1;
+        font-size: 32px;
+        font-stretch: condensed;
+        cursor: pointer;
+        transition: all 200ms ease-in-out;
+      }
+
+
+      #slider button:hover {
+        background-color: #773db6;
+      }
+
+      button#prev {
+        left: -50px;
+        padding: 7px 17px 7px 15px;
+      }
+
+      button#next {
+        right: -50px;
+       padding: 7px 15px 7px 17px;
+      }
+
+      
+    
+      .animated-section {
+        opacity: 0;
+        transform: translateY(40px);
+        transition: opacity 1s, transform 1s;
+      }
+
+      .animated-section.active {
+        opacity: 1;
+        transform: translateY(0);
+      }
+
+
+      
+      ::placeholder {
+        color: #999;
+      }
+
+
+      input:invalid, textarea:invalid {
+        border: 2px solid red;
+      }
+
+
+      input:valid, textarea:valid {
+        border: 2px solid #ccc;
+      }
+
+      #success-message {
+        color: green; 
+        font-weight: bold;
+      }
+      
+      .hidden {
+        display: none;
       }
