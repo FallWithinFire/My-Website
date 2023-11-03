@@ -23,6 +23,13 @@ function initMap() {
     center: coordinates,
     radius: 800,
   });
+
+  // shows the coordinates of where the viewer clicked
+  map.addListener("click", (e) => {
+    alert(
+      "You clicked the map at " + JSON.stringify(e.latLng.toJSON(), null, 2)
+    );
+  });
 }
 
 window.initMap = initMap;
